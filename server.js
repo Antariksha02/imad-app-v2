@@ -5,22 +5,57 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    title: 'Article One | Antariksha Gupta',
-    heading: 'Article One',
-    date: 'Feb 12, 2017',
-    content: `
-            <p>
-                This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
-            </p>
-            <p>
-                This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
-            </p>
-            <p>
-                This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. 
-            </p>
-                `
+var articles = {
+    articleOne : {
+        title: 'Article One | Antariksha Gupta',
+        heading: 'Article One',
+        date: 'Feb 12, 2017',
+        content: `
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
+                </p>
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
+                </p>
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. 
+                </p>
+                    `
+    },
+    articleTwo : {
+        title: 'Article Two | Antariksha Gupta',
+        heading: 'Article Two',
+        date: 'Feb 12, 2017',
+        content: `
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
+                </p>
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
+                </p>
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. 
+                </p>
+     `
+    },
+    articleThree : {
+        title: 'Article Three | Antariksha Gupta',
+        heading: 'Article Three',
+        date: 'Feb 12, 2017',
+        content: `
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
+                </p>
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
+                </p>
+                <p>
+                    This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one. 
+                </p>
+     `
+    }
 }
+
 function createTemplate (data) {
     var title = data.title;
     var heading = data.heading;
