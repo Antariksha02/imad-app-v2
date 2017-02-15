@@ -9,7 +9,7 @@ var articles = {
     'article-one' : {
         title: 'Article One | Antariksha Gupta',
         heading: 'Article One',
-        date: 'Feb 12, 2017',
+        date: 'Feb 16, 2017',
         content: `
                 <p>
                     This is just a simple para for Article one. This is just a simple para for Article one. This is just a simple para for Article one.  
