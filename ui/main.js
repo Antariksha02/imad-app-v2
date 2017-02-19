@@ -8,11 +8,11 @@ element.innerHTML = " Changed thru JS !";
 var marginLeft  = 0;
 
 function moveRight(){
-    marginLeft = marginLeft + 1;
+    marginLeft = marginLeft + 2;
     img.style.marginLeft = marginLeft + 'px';
 }
 
 var img = document.getElementById('madi');
 img.onclick = function() {
-    var inetrval = setInterval(moveRight, 100);
+    var inetrval = setInterval(moveRight, 50);
 };
