@@ -7,7 +7,7 @@ element.innerHTML = " Changed thru JS !";
 //Move the image on click
 var marginLeft  = 0;
 
-function moevRight(){
+function moveRight(){
     marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px';
 }
