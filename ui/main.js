@@ -5,7 +5,12 @@ var element = document.getElementById('main-text');
 element.innerHTML = " Changed thru JS !";
 
 //Move the image on click
+function moevRight(){
+    marginLeft = marginLeft + 1;
+    img.style.marginLeft = marginLeft + 'px';
+}
+
 var img = document.getElementById('madi');
 img.onclick = function() {
-    img.style.marginLeft = '100px';
+    var inetrval = setInterval(moveRight, 100);
 };
