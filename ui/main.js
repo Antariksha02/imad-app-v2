@@ -6,7 +6,6 @@ element.innerHTML = " Changed thru JS !";
 
 //Move the image on click
 var img = document.getElementById('madi');
-
-img.onclick = fumction() {
+img.onclick = function() {
     img.style.leftmargin = '100px';
-}
+};
